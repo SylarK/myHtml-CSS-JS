@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progressive bar</title>
+
+    <link rel="stylesheet" href="style/styles.css">
+
+</head>
+<body>
+
+    <h3>Progressive Bar</h3>
+
+    <div class="container">
+        <div id="progContainer">
+
+            <div id="progress"></div>
+
+        </div>
+    </div>
+
+    <button id="btn-click" onclick="progressBar()">Click me</button>
+
+
+    <script>
+
+        function progressBar(){
+
+            let x = document.querySelector('#progress');
+            let larg = 1;
+            let interv = setInterval(frame, 60) //this function is being called each 60mls (interval)
+            
+            function frame(){
+
+                if(larg >= 100) {
+
+                    clearInterval(interv);
+
+                } else {
+
+                    larg++; //incress in progress bar
+                    x.style.width = larg + '%';
+
+                }
+
+            }
+
+        }
+
+    </script>
+
+    
+</body>
+</html>
