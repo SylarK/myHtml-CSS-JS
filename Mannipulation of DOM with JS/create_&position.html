@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let newDiv = document.createElement('div')
+        newDiv.id = 'newDiv'
+        newDiv.style.width = '20vh'
+        newDiv.style.height = '20vh'
+        newDiv.style.border = '2px black dashed'
+
+        let squareDiv = document.createElement('div')
+        squareDiv.style.width = '10vh'
+        squareDiv.style.height = '10vh'
+        squareDiv.style.border = '2px red solid'
+        squareDiv.style.borderRadius = '50%'
+        squareDiv.style.margin = 'auto'
+        squareDiv.style.marginTop = '25%'
+
+        newDiv.appendChild(squareDiv)
+        document.body.appendChild(newDiv)
+
+
+    </script>
+
+</body>
+</html>
