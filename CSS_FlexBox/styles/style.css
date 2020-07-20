@@ -1,0 +1,85 @@
+#flex_container{
+
+    display: flex;
+    background-color: rgb(175, 175, 175);
+    /*flex-direction: column-reverse;*/
+    /*flex-wrap: wrap;*/
+    flex-flow: row wrap;
+}
+
+#flex_container>div{
+
+    background-color: rgb(226, 166, 37);
+    margin: 10vh;
+    padding: 5vh;
+    width: 10vh;
+    height: 10vh;
+    text-align: center;
+    
+
+}
+
+#flex_container>div>p{
+
+    font-size: 5vh;
+
+}
+
+#container_justify{
+
+    display: flex;
+    flex-direction: row;
+    background-color: gainsboro;
+    justify-content: center;
+
+    
+
+}
+
+#container_justify>div{
+
+    background-color: rgb(226, 166, 37);
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+
+}
+
+#perfect-centering{
+
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#perfect-centering>div{
+
+    background-color: brown;
+    border-radius: 50%;
+    border: 2px dashed white;
+    width: 20vh;
+    height: 20vh;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+#perfect-centering>:hover{
+
+    background: linear-gradient(gray, blue);
+
+}
+
+@keyframes pulse{
+
+    0%      {width: 20vh; height: 20vh;}
+    50%      {width: 40vh; height: 40vh;}
+    99%    {width: 20vh; height: 20vh;}
+    
+
+}
