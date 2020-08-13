@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 72px;
+    animation: type 3s steps(24);
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: consolas;
+    text-transform: uppercase;
+    width: 24ch;
+    border-right: 3px solid black;
+}
+
+@media only screen and (max-width: 768px){
+    /*For mobile */
+
+    h2{
+        font-size: 24px;
+    }
+
+}
+
+@keyframes type{
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 24ch;
+    }
+}
+
