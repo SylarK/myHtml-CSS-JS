@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #eee;
+    font-size: 26px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    /*
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+    */
+}
+
+.span-404{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 210%);
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: default;
+}
+
+.error-404{
+    text-transform: uppercase;
+    font-size: 8rem;
+    color: #eee;
+    text-decoration: none;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow:0 1px 0 rgb(190,190,190),
+                0 2px 0 rgb(185,185,185),
+                0 3px 0 rgb(180,180,180),
+                0 4px 0 rgb(175,175,175),
+                0 5px 0 rgb(170,170,170),
+                0 6px 0 rgb(165,165,165),
+                0 7px 0 rgb(160,160,160),
+                0 1px 5px rgba(0,0,0,.05),
+                0 3px 5px rgba(0,0,0,.10),
+                0 5px 10px rgba(0,0,0,.15),
+                0 7px 10px rgba(0,0,0,.20),
+                0 10px 15px rgba(0,0,0,.25);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.error-404:hover{
+    text-shadow:0 1px 0 rgb(190,190,190),
+                0 2px 0 rgb(185,185,185),
+                0 3px 0 rgb(180,180,180),
+                0 4px 0 rgb(175,175,175),
+                0 5px 0 rgb(170,170,170),
+                0 6px 0 rgb(165,165,165),
+                0 7px 0 rgb(160,160,160),
+                0 8px 0 rgb(155,155,155),
+                0 9px 0 rgb(150,150,150),
+
+                0 1px 5px rgba(0,0,0,.05),
+                0 5px 5px rgba(0,0,0,.10),
+                0 10px 10px rgba(0,0,0,.15),
+                0 15px 10px rgba(0,0,0,.20),
+                0 20px 15px rgba(0,0,0,.25);;
+    transform: translate(-51%, -51%);
+    transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width:600px){
+    .span-404{
+        width: 60vw;
+        text-align: center;
+    }
+}
