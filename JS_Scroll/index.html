@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Scroll</title>
+
+    <style>
+
+        #anchor1{
+            color: red;
+            line-height: 60px;
+            margin-top: 50%;    
+            min-height: 100vh ;
+            text-align: center;
+            font-weight: 800;
+        }
+
+        #anchor2{
+            color: blue;
+            line-height: 60px;
+            margin-top: 50%;    
+            min-height: 100vh ;
+            text-align: center;
+            font-weight: 800;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <a href="#anchor1" class="scrollLink">Scroll to anchor 1</a>
+    <a href="#anchor2" class="scrollLink">Scroll to anchor 2</a>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p id="anchor1"><strong>Anchor 1</strong> - Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aut at delectus quaerat culpa eius nihil cumque sapiente harum? 
+        Deserunt earum fugiat eligendi culpa illo obcaecati pariatur consectetur fuga sed.</p>
+    <p id="anchor2"><strong>Anchor 2</strong> - Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aut at delectus quaerat culpa eius nihil cumque sapiente harum? 
+        Deserunt earum fugiat eligendi culpa illo obcaecati pariatur consectetur fuga sed.<br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim alias accusantium, sint eligendi nihil necessitatibus odio ex rem dicta deleniti laudantium eos amet dolor 
+        reprehenderit animi distinctio, sequi autem repellat.</p>
+        
+    <script src="js/jquery.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $('a.scrollLink').click(function(event){
+                event.preventDefault();
+                $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500);
+            })
+        })
+
+    </script>
+
+</body>
+</html>
